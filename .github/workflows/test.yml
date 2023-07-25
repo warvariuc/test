@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Update git info
-        run: |
-          echo "${{ toJson(github) }}"
-      # Commit all changed files back to the repository
-      # - uses: stefanzweifel/git-auto-commit-action@v4
+        run: echo "${{ toJson(github) }}"
+# Commit all changed files back to the repository
+# - uses: stefanzweifel/git-auto-commit-action@v4
